@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conservation — Atlas de Madagascar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <nav>
+    <div class="nav-logo">Atlas <span>Madagascar</span></div>
+    <button class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links" id="navlinks">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="faune.html">Faune & Flore</a></li>
+      <li><a href="region.html">Régions</a></li>
+      <li><a href="culture.html">Culture</a></li>
+      <li><a href="conservation.html">Conservation</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero-conservation">
+    <div class="hero-conservation-content">
+      <div class="hero-warning">
+        <div class="warning-dot"></div>
+        Alerte — Situation critique
+      </div>
+      <h1 class="hero-conservation-title">
+        Un trésor qui<br><em>s'efface</em>
+      </h1>
+      <p class="hero-conservation-sub">
+        Avant qu'il soit trop tard — ce que nous perdons, ce que nous pouvons encore sauver
+      </p>
+      <div class="hero-stats-row">
+        <div class="hstat">
+          <div class="hstat-num danger">90%</div>
+          <div class="hstat-lbl">Forêts détruites</div>
+        </div>
+        <div class="hstat-sep"></div>
+        <div class="hstat">
+          <div class="hstat-num warning">200+</div>
+          <div class="hstat-lbl">Espèces menacées</div>
+        </div>
+        <div class="hstat-sep"></div>
+        <div class="hstat">
+          <div class="hstat-num danger">40K</div>
+          <div class="hstat-lbl">Ha perdus / an</div>
+        </div>
+        <div class="hstat-sep"></div>
+        <div class="hstat">
+          <div class="hstat-num hope">6M+</div>
+          <div class="hstat-lbl">Ha protégés</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Découvrir</span>
+    </div>
+  </div>
+
+  <!-- MENACES -->
+  <div class="menaces-section">
+    <div class="section-header reveal">
+      <div>
+        <p class="section-tag">Les Menaces</p>
+        <h2 class="section-heading">Ce que nous<br><em>perdons</em></h2>
+      </div>
+      <div class="section-count">03</div>
+    </div>
+
+    <div class="menaces-grid">
+      <div class="menace-card reveal d1" style="--card-color: #e74c3c;">
+        <span class="menace-icon">🌲</span>
+        <div class="menace-num">01 — Menace principale</div>
+        <h3 class="menace-title">Déforestation</h3>
+        <p class="menace-desc">
+          Madagascar a perdu plus de 90% de ses forêts originelles.
+          Le tavy — la culture sur brûlis — détruit chaque année des milliers
+          d'hectares de forêts primaires irremplaçables, emportant avec elles
+          des espèces encore inconnues de la science.
+        </p>
+        <span class="menace-stat red">⚠ 40 000 ha perdus / an</span>
+      </div>
+
+      <div class="menace-card reveal d2" style="--card-color: #e67e22;">
+        <span class="menace-icon">🎣</span>
+        <div class="menace-num">02 — Menace secondaire</div>
+        <h3 class="menace-title">Braconnage & Trafic</h3>
+        <p class="menace-desc">
+          Le trafic d'espèces sauvages est en explosion. Lémuriens vendus
+          comme animaux de compagnie, bois de rose illégalement exporté,
+          tortues capturées pour leur viande — la faune de Madagascar
+          est pillée à une vitesse alarmante.
+        </p>
+        <span class="menace-stat orange">⚠ 200+ espèces menacées</span>
+      </div>
+
+      <div class="menace-card reveal d3" style="--card-color: #3498db;">
+        <span class="menace-icon">🌡️</span>
+        <div class="menace-num">03 — Menace globale</div>
+        <h3 class="menace-title">Changement Climatique</h3>
+        <p class="menace-desc">
+          Les cyclones deviennent plus intenses, les sécheresses plus longues
+          dans le sud. Les récifs coralliens blanchissent. Les migrations
+          d'espèces perturbent des écosystèmes qui n'ont pas évolué
+          pour faire face à ces changements rapides.
+        </p>
+        <span class="menace-stat red">⚠ +1.5°C d'ici 2050</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="gold-divider reveal"></div>
+
+  <!-- ACTIONS -->
+  <div class="actions-section">
+    <div class="section-header reveal">
+      <div>
+        <p class="section-tag">Les Espoirs</p>
+        <h2 class="section-heading">Ce que nous<br><em>pouvons sauver</em></h2>
+      </div>
+      <div class="section-count">04</div>
+    </div>
+
+    <div class="actions-grid">
+      <div class="action-card reveal d1">
+        <span class="action-icon">🌿</span>
+        <h3 class="action-title">Aires Protégées</h3>
+        <p class="action-desc">
+          Madagascar a créé plus de 6 millions d'hectares d'aires protégées
+          depuis 2003. Ces sanctuaires préservent les derniers habitats
+          intacts et offrent un refuge aux espèces les plus menacées.
+        </p>
+        <span class="action-tag">6M ha protégés</span>
+      </div>
+
+      <div class="action-card reveal d2">
+        <span class="action-icon">🌱</span>
+        <h3 class="action-title">Reforestation</h3>
+        <p class="action-desc">
+          Des programmes de reforestation massifs replantent des espèces
+          natives. Des communautés locales s'engagent pour restaurer
+          les corridors entre les habitats fragmentés.
+        </p>
+        <span class="action-tag">Millions d'arbres replantés</span>
+      </div>
+
+      <div class="action-card reveal d3">
+        <span class="action-icon">👨‍👩‍👧‍👦</span>
+        <h3 class="action-title">Communautés Locales</h3>
+        <p class="action-desc">
+          Les populations locales sont les premières gardiennes de la nature.
+          Les programmes d'éco-tourisme et de gestion communautaire
+          leur donnent les moyens de protéger leur environnement.
+        </p>
+        <span class="action-tag">Éco-tourisme responsable</span>
+      </div>
+
+      <div class="action-card reveal d4">
+        <span class="action-icon">🔬</span>
+        <h3 class="action-title">Recherche Scientifique</h3>
+        <p class="action-desc">
+          Des chercheurs du monde entier travaillent à Madagascar pour
+          cataloguer et comprendre sa biodiversité unique avant qu'elle
+          ne disparaisse — une course contre la montre pour la science.
+        </p>
+        <span class="action-tag">Nouvelles espèces chaque année</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- APPEL FINAL -->
+  <div class="final-section">
+    <h2 class="final-title reveal">
+      Il est temps<br>d'<em>agir</em>
+    </h2>
+    <p class="final-sub reveal">
+      Madagascar ne disparaîtra pas en un jour — mais chaque arbre coupé,
+      chaque espèce perdue est une page arrachée au livre du vivant.
+      Ce que nous faisons aujourd'hui déterminera ce que les générations
+      futures pourront encore voir demain.
+    </p>
+    
+    <div class="final-quote reveal">
+      <p>"Ny ala no miahy ny rano, ny rano no miahy ny vary."</p>
+      
+    </div>
+  </div>
+
+  <script>
+    const cursor = document.getElementById('cursor');
+    const ring = document.getElementById('cursor-ring');
+    if (cursor && ring) {
+      let mx = 0, my = 0, rx = 0, ry = 0;
+      document.addEventListener('mousemove', e => {
+        mx = e.clientX; my = e.clientY;
+        cursor.style.left = (mx - 4) + 'px';
+        cursor.style.top = (my - 4) + 'px';
+      });
+      function animRing() {
+        rx += (mx - rx - 18) * 0.12;
+        ry += (my - ry - 18) * 0.12;
+        ring.style.left = rx + 'px';
+        ring.style.top = ry + 'px';
+        requestAnimationFrame(animRing);
+      }
+      animRing();
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('visible');
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right')
+      .forEach(el => observer.observe(el));
+
+    // MENU BURGER
+const burger = document.getElementById('burger');
+const navLinks = document.getElementById('navlinks');
+
+if (burger && navLinks) {
+  burger.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    burger.classList.toggle('open', isOpen);
+  });
+
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      burger.classList.remove('open');
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!burger.contains(e.target) && !navLinks.contains(e.target)) {
+      navLinks.classList.remove('open');
+      burger.classList.remove('open');
+    }
+  });
+}
+  </script>
+
+</body>
+</html>

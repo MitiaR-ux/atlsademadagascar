@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Régions de Madagascar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- curseur -->
+     <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
+
+    <nav>
+        <div class="nav-logo">Atlas <span>Madagascar</span></div>
+        <button class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links" id="navlinks">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="faune.html">Faune & Flore</a></li>
+            <li><a href="region.html">Régions</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="conservation.html">Conservation</a></li>
+        </ul>
+    </nav>
+
+    <!-- header -->
+    <div class="page-header">
+        <div>
+            <p class="page-tag">Découvrer</p>
+            <h1 class="page-title">Les <em>Régions</em><br>de Madagascar</h1>
+        </div>
+        <div class="page-counter" id="page-counter">01 / 06</div>
+    </div>
+
+    <!-- Caroussel -->
+    <div class="carousel-wrap">
+        <div class="carousel-track-wrap">
+            <div class="carousel-track" id="track">
+
+                <!-- Slide 1 - Nord -->
+                 <div class="slide active" data-index="0">
+                    <div class="slide-bg bg-nord"></div>
+                    <div class="slide-deco">🌿</div>
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <div class="slide-left">
+                            <div class="slide-num">01 - Nord</div>
+                            <h2 class="slide-name">La <em>Perle</em><br>du Nord</h2>
+                            <p class="slide-desc">Montagne d'Ambre, Diego Suarez, plages</p>
+                        </div>
+                        <div class="slide-right">
+                            <div class="slide-tags">
+                                <span class="slide-tag">Montagne d'Ambre</span>
+                                <span class="slide-tag">Diego-Suarez</span>
+                                <span class="slide-tag"></span>
+                            </div>
+                            <div class="slide-facts">
+                                <div class="fact">
+                                    <div class="fact-num">18°C</div>
+                                    <div class="fact-lbl">Température moyenne</div>
+                                </div>
+                                <div class="fact">
+                                    <div class="fact-num">2500m</div>
+                                    <div class="fact_lbl">Altitude max</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+
+
+                 <!-- Slide 2 Est -->
+                <div class="slide" data-index="1">
+                    <div class="slide-bg bg-est"></div>
+                    <div class="slide-deco">🌊</div>
+                    <div class="slide-content">
+                        <div class="slide-left">
+                            <div class="slide-num">02 - Est</div>
+                            <h2 class="slide-name">La <em>Côte</em><br>Sauvage</h2>
+                            <p class="slide-desc">Forêts pluviales, canal de Pangalanes, la côte est le sanctuaire des espèces les plus rares, arrosée par les pluies de l'Océan Indien</p>
+                        </div>
+                        <div class="slide-right">
+                            <div class="slide-tags">
+                                <span class="slide-tag"></span>
+                                <span class="slide-tag">Pangalanes</span>
+                                <span class="slide-tag">Masoala</span>
+                            </div>
+                            <div class="slide-facts">
+                                <div class="fact">
+                                    <div class="fact-num">3500mm</div>
+                                    <div class="fact-lbl">Pluies / an</div>
+                                </div>
+                                <div class="fact">
+                                    <div class="fact-num">90%</div>
+                                    <div class="fact_lbl">Forêt primaire</div>
+                                </div>
+                            </div>
+                        </div>                   
+                    </div>
+                </div>
+
+
+                <!-- Slide 3 Sud -->
+                <div class="slide" data-index="2">
+                    <div class="slide-bg bg-sud"></div>
+                    <div class="slide-deco">🏜️</div>
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <div class="slide-left">
+                            <div class="slide-nnum">03 - Sud</div>
+                            <h2 class="slide-name">Le <em>Désert</em><br>Epineux</h2>
+                            <p class="slide-desc">Tsingy de Bemaraha, forêts d'euphorbes. Le Sud est une autre planète. Aride, mystérieux, peuplé du peuple d'Antandroy</p>
+                        </div>
+                        <div class="slide-right">
+                            <div class="slide-tags">
+                                <span class="slide-tag">Tsingy</span>
+                                <span class="slide-tag">Fort-Dauphin</span>
+                                <span class="slide-tag">Ifaty</span>
+                            </div>
+                            <div class="slide-facts">
+                                <div class="fact">
+                                    <div class="fact-num">35°C</div>
+                                    <div class="fact-lbl">Température max</div>
+                                </div>
+                                <div class="fact">
+                                    <div class="fact-num">400mm</div>
+                                    <div class="fact-lbl">Pluies / an</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Slide 4 Ouest -->
+                <div class="slide" data-index="3">
+                    <div class="slide-bg bg-ouest"></div>
+                    <div class="slide-deco">🌳</div>
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <div class="slide-left">
+                            <div class="slide-num">04 — Ouest</div>
+                            <h2 class="slide-name">L'<em>Allée</em> des<br>Baobabs</h2>
+                            <p class="slide-desc">Morondava, l'allée des baobabs au coucher du soleil — c'est l'image emblématique de Madagascar. Savanes immenses et traditions Sakalava.</p>
+                        </div>
+                        <div class="slide-right">
+                            <div class="slide-tags">
+                                <span class="slide-tag">Morondava</span>
+                                <span class="slide-tag">Baobabs</span>
+                                <span class="slide-tag">Belo sur Mer</span>
+                            </div>
+                            <div class="slide-facts">
+                                <div class="fact">
+                                    <div class="fact-num">800+</div>
+                                    <div class="fact-lbl">Ans par baobab</div>
+                                </div>
+                                <div class="fact">
+                                    <div class="fact-num">30m</div>
+                                    <div class="fact-lbl">Hauteur moyenne</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 5 — Hautes Terres -->
+                <div class="slide" data-index="4">
+                    <div class="slide-bg bg-hautes"></div>
+                    <div class="slide-deco">🏔️</div>
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <div class="slide-left">
+                            <div class="slide-num">05 — Hautes Terres</div>
+                            <h2 class="slide-name">Le <em>Cœur</em><br>de l'Île</h2>
+                            <p class="slide-desc">Antananarivo la capitale, rizières en terrasses d'Antsirabe — les hautes terres sont l'âme de Madagascar, où les Merina ont bâti leur royaume millénaire.</p>
+                        </div>
+                        <div class="slide-right">
+                            <div class="slide-tags">
+                                <span class="slide-tag">Antananarivo</span>
+                                <span class="slide-tag">Antsirabe</span>
+                                <span class="slide-tag">Ankaratra</span>
+                            </div>
+                            <div class="slide-facts">
+                                <div class="fact">
+                                    <div class="fact-num">1400m</div>
+                                    <div class="fact-lbl">Altitude capitale</div>
+                                </div>
+                                <div class="fact">
+                                    <div class="fact-num">3M+</div>
+                                    <div class="fact-lbl">Habitants</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 6 — Îles -->
+                <div class="slide" data-index="5">
+                    <div class="slide-bg bg-iles"></div>
+                    <div class="slide-deco">🏝️</div>
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <div class="slide-left">
+                            <div class="slide-num">06 — Îles</div>
+                            <h2 class="slide-name">Les <em>Joyaux</em><br>de l'Océan</h2>
+                            <p class="slide-desc">Nosy Be, Nosy Boraha, Nosy Iranja — les îles de Madagascar sont parmi les plus belles de l'océan Indien. Coraux intacts et plages désertes.</p>
+                        </div>
+                        <div class="slide-right">
+                            <div class="slide-tags">
+                                <span class="slide-tag">Nosy Be</span>
+                                <span class="slide-tag">Nosy Iranja</span>
+                                <span class="slide-tag">Sainte-Marie</span>
+                            </div>
+                            <div class="slide-facts">
+                                <div class="fact">
+                                    <div class="fact-num">28°C</div>
+                                    <div class="fact-lbl">Eau en été</div>
+                                </div>
+                                <div class="fact">
+                                    <div class="fact-num">50+</div>
+                                    <div class="fact-lbl">Îles & îlots</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Thumbnails -->
+        <div class="thumbnails" id="thumbs">
+            <div class="thumb active"></div>
+            <div class="thumb"></div>
+            <div class="thumb"></div>
+            <div class="thumb"></div>
+            <div class="thumb"></div>
+            <div class="thumb"></div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="carousel-nav">
+            <div class="carousel-dots" id="dots">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress" style="width:16.66%"></div>
+            </div>
+            <div class="nav-arrows">
+                <button class="arrow-btn" id="prev">&#8592;</button>
+                <button class="arrow-btn" id="next">&#8594;</button>
+            </div>
+        </div>
+    </div>
+    <script src="script..js"></script>
+</body>
+</html>

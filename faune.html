@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faune & Flore de Madagascar</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- curseur -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
+
+     <nav>
+        <div class="nav-logo">Atlas <span>Madagascar</span></div>
+        <button class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links" id="navlinks">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="faune.html">Faune & Flore</a></li>
+            <li><a href="region.html">Régions</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="conservation.html">Conservation</a></li>
+        </ul>
+    </nav>
+    <div class="tabs">
+        <button class="tab active" onclick="showTab('faune', this)">🦎 Faune</button>
+        <button class="tab" onclick="showTab('flore', this)">🌺 Flore</button>
+    </div>
+    
+    <div class="section active" id="faune">
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-img">
+                    <img src="./sifaka_mitia.jpg" alt="Sifaka de Mine-Edwards" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+            
+                <div class="card-body">
+                        
+                    <h3 class="card-name">Sifaka de Mine-Edwards</h3>
+                    <p class="card-sci">Propithecus edwardsi</p>
+                    <p class="card-desc">Le lémurien danseur aux bras dorés, unique aux forêts de l'est.</p>
+                    <span class="badge badge-orange">En danger critique</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="./Aye-Ayejpg.jpg" alt="Aye-Aye" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+            
+                <div class="card-body">
+                        
+                    <div class="card-name">Aye-Aye</div>
+                    <div class="card-sci">Daubentonia madagascariensis</div>
+                    <div class="card-desc">Doigt du milieu extra-long pour extraire les larves des arbres. </div>
+                    <span class="badge badge-red">En danger</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="./caméléon.jpeg" alt="cameleon" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="card-body">
+                        
+                    <div class="card-name">Caméléon personi</div>
+                    <div class="card-sci">Calumma parsonii</div>
+                    <div class="card-desc">Le plus grand caméléon du monde — jusqu'à 70 cm.</div>
+                    <span class="badge badge-yellow">Vulnérable</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="./Tomato frog.jpg" alt="Grenouille Tomate" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="card-body">                   
+                    <div class="card-name">Grenouille Tomate</div>
+                    <div class="card-sci">Dyscophus antongilii</div>
+                    <div class="card-desc">Rouge vif, sécrète une substance collante contre les prédateurs.</div>
+                    <span class="badge badge-yellow">Vulnérable</span>
+                </div>
+            </div>
+        </div>
+            
+    </div>
+    
+
+    <div class="section" id="flore">
+        <div class="cards-grid">
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="./BaobabMada.jfif" alt="Baobab" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="card-body">
+                        
+                    <div class="card-name">Baobab de Madagascar</div>
+                    <div class="card-sci">Adansonia madagascariensis</div>
+                    <div class="card-desc">Le géant au tronc massif, symbole de Madagascar.</div>
+                    <span class="badge badge-yellow">Vulnérable</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                     <img src="./Ravenala madagascariensis Sonnerat.jfif" alt="Ravenala" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="card-body">
+                        
+                    <div class="card-name">Ravinala de Madagascar</div>
+                    <div class="card-sci">Ravenala madagascariensis</div>
+                    <div class="card-desc">Arbre du voyageur, feuilles en éventail, source d'eau pour les animaux.</div>
+                    <span class="badge badge-green">Emblème national</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="./orchidee.jfif" alt="Orchidée de Madagascar" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="card-body">
+                        
+                    <div class="card-name">Orchidée de Madagascar</div>
+                    <div class="card-sci">Angraecum sesquipedale</div>
+                    <div class="card-desc">Fleur à la longue éperon, pollinisée par une sphinx à longue trompe.</div>
+                    <span class="badge badge-red">Menacée</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+
+                    <img src="./catharanthus roseus.jfif" alt="Palmier Triangle" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="card-body">
+                        
+                    <div class="card-name">Pervenche de Madagascar</div>
+                    <div class="card-sci">Catharanthus roseus</div>
+                    <div class="card-desc">Utilisée pour traiter la leucémie — révolution médicale mondiale.</div>
+                    <span class="badge badge-green">Emblème national</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script..js"></script>
+</body>
+</html>
